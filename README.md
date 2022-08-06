@@ -12,6 +12,8 @@ Using this script we will be able to execute commands remotely for n number of r
 This script will skip to execute commands in terminated instances. 
 
 <i> gcloud compute ssh NAME --zone ZONE --command='EXECUTE-COMMAND' </i>
+
+
 The above command establishes a ssh session with the mentioned instance and will execute the given command.
 
 
