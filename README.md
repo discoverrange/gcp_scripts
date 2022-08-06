@@ -9,7 +9,9 @@ Before executing please configure the GCP project
 <i> gcloud config set project [PROJECT_ID] </i>
 
 Using this script we will be able to execute commands remotely for n number of running linux instances present in a GCP project 
-This script will skip to execute commands in terminated instances. 
+
+
+This script will skip to execute ssh command in terminated instances. And it maintains the skipped instances in /tmp/status.txt file
 
 <i> gcloud compute ssh NAME --zone ZONE --command='EXECUTE-COMMAND' </i>
 
