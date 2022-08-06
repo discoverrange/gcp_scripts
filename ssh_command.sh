@@ -22,7 +22,7 @@
                 printf "Completed Agent\n\n" 
             fi
         else
-            printf "\n\n"
+            printf "\n\n Agent Status: Skipped"
             echo "Agent Status: Skipped as instance is teminated:" $n >> /tmp/status.txt  #storing skipped instances
         fi
  done
