@@ -1,0 +1,8 @@
+#!/bin/bash -v
+   for project in $(gcloud projects list --format='value(PROJECT_ID)');  do
+    echo "$project" 
+    name="$(gcloud projects get-iam-policy $project --flatten=bindings --filter=bindings.role:roles/owner --format='value(bindings.members)')"
+    echo "$name"
+    echo "$project","$name" >> prolist.csv ; \
+ done
+ 
